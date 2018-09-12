@@ -1,0 +1,81 @@
+/* Clear out these styles to start fresh or use this as a base! */
+@import url(https://fonts.googleapis.com/css?family=Kanit:600);
+html {
+  height: 100%;
+  display: flex;
+}
+
+body {
+  margin: auto;
+}
+
+html, body {
+  background: #FFCC00;
+  color: #FFF;
+  font-family: Kanit, sans-serif;
+  font-size: 20vw;
+}
+
+.register-now1 {
+  height: 62px;
+  width: 218px;
+  background-color: #FFCC00;
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 20.8px;
+  font-weight: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+.splitting {
+  animation: squiggly-anim 0.3s infinite;
+}
+
+.char {
+  animation: slide-in-top 1s cubic-bezier(0.5, 0, 0.5, 1) both;
+  animation-delay: calc( .2s * var(--char-index) );
+}
+.char:nth-child(odd) {
+  animation-name: slide-in-bottom;
+}
+.char:last-child {
+  animation-name: slide-in-right;
+  animation-delay: 0s;
+}
+
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}
+@keyframes slide-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+}
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-400%);
+  }
+}
+@keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}

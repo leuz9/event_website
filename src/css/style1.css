@@ -1,0 +1,47 @@
+body {
+    background: #20262E;
+    padding: 20px;
+    font-family: Helvetica;
+    color: #fff;
+  }
+  
+  .venobox > img{
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .social-share{
+    padding: 5px;
+  }
+  
+  .social-share a{
+    display: inline-block;
+    padding-right: 4px;
+  }
+  
+  .social-share svg{
+    max-height:20px;
+    width:20px;
+    color: #d2d2d2;
+    fill: #d2d2d2;
+    z-index: 10;
+  }
+  
+  svg.pinterest:hover{
+    color: #BD081C;
+    fill: #BD081C;
+  }
+  svg.facebook:hover{
+    color: #3B5998;
+    fill: #3B5998;
+  }
+  svg.twitter:hover{
+    color: #1DA1F2;
+    fill: #1DA1F2;
+  }
+  svg.gplus:hover{
+    color: #DC4E41;
+    fill: #DC4E41;
+  }
+  
+  
