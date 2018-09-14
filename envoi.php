@@ -1,23 +1,15 @@
 <?php 
-//Pour définir chaque input du formulaire, ajouter le signe de dollar devant
+// using SendGrid's PHP Library
+// https://github.com/sendgrid/sendgrid-php
+require("sendgrid/sendgrid-php.php");
+$sendgrid = new SendGrid("SENDGRID_APIKEY");
+$email    = new SendGrid\Email();
 
-$nom = $_POST['nom'];
-$mailheaders .= $_POST['email'];
-$msg .= $_POST['message'];
-//Pourait continuer ainsi jusqu'à la fin du formulaire
+$email->addTo("leuzleuz9@gmail.com")
+      ->setFrom("jobrek17@gmail.com")
+      ->setSubject("Sending with SendGrid is Fun")
+      ->setHtml("and easy to do anywhere, even with PHP");
 
-$recipient = "leuzleuz9@gmail.com";
-$subject = "Formulaire";
-
-
-mail($recipient, $subject, $msg, $mailheaders);
-
-echo "<HTML><HEAD>";
-echo "<TITLE>Formulaire envoyer!</TITLE></HEAD><BODY>";
-echo "<H1 align=center>Merci, $nom </H1>";
-echo "<P align=center>";
-echo "Votre formulaire à bien été envoyé !</P>";
-echo '<a href="home.html">Retour à l\'accueil</a>';
-echo "</BODY></HTML>";
+$sendgrid->send($email);
 
 ?>
