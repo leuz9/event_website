@@ -1,1 +1,1 @@
-# event_website
+# EDACY event website
