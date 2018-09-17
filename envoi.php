@@ -7,43 +7,39 @@
 
 <body>
 <?php 
-require 'vendor/autoload.php';
-//Pour définir chaque input du formulaire, ajouter le signe de dollar devant
+//require 'vendor/autoload.php';
+// If you're using Composer (recommended)
+// Comment out the above line if not using Composer
+require("sendgrid/sendgrid-php.php");
+// If not using Composer, uncomment the above line and
+// download sendgrid-php.zip from the latest release here,
+// replacing <PATH TO> with the path to the sendgrid-php.php file,
+// which is included in the download:
+// https://github.com/sendgrid/sendgrid-php/releases
 
-$request_body = json_decode('{
-  "personalizations": [
-    {
-      "to": [
-        {
-          "email": "leuzleuz9@gmail.com"
-        }
-      ],
-      "subject": "Hello World from the SendGrid PHP Library!"
-    }
-  ],
-  "from": {
-    "email": "jobrek17@gmail.com"
-  },
-  "content": [
-    {
-      "type": "text/plain",
-      "value": "Hello, Email!"
-    }
-  ]
-}');
-
-$apiKey = getenv('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');
-$sg = new \SendGrid($apiKey);
-
-$response = $sg->client->mail()->send()->post($request_body);
-echo $response->statusCode();
-echo $response->body();
-echo $response->headers();
+$email = new \SendGrid\Mail\Mail(); 
+$email->setFrom("leuzleuz9@gmail.com", "Example User");
+$email->setSubject("Sending with SendGrid is Fun");
+$email->addTo("jobrek17@gmail.com", "Example User");
+$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+);
+$sendgrid = new \SendGrid(getenv('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'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+}
 
 ?>
 
-
-Les donn&eacute;es ont &eacute;t&eacute; envoy&eacute;s, cliquez <a href="#">ici pour retourner sur le site 
+<h1>
+les donnees <a href="home.html">ici pour retourner sur le site 
 </a>
+</h1>
 </body>
 </html>
