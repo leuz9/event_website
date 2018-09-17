@@ -7,25 +7,38 @@
 
 <body>
 <?php 
+require 'vendor/autoload.php';
 //Pour définir chaque input du formulaire, ajouter le signe de dollar devant
 
-$nom = $_POST['nom'];
-$mailheaders .= $_POST['email'];
-$msg .= $_POST['message'];
-//Pourait continuer ainsi jusqu'à la fin du formulaire
+$request_body = json_decode('{
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "leuzleuz9@gmail.com"
+        }
+      ],
+      "subject": "Hello World from the SendGrid PHP Library!"
+    }
+  ],
+  "from": {
+    "email": "jobrek17@gmail.com"
+  },
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "Hello, Email!"
+    }
+  ]
+}');
 
-$recipient = "leuzleuz9@gmail.com";
-$subject = "Formulaire";
+$apiKey = getenv('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');
+$sg = new \SendGrid($apiKey);
 
-
-mail($recipient, $subject, $msg, $mailheaders);
-
-
-echo "<H1 align=center>Merci, $nom </H1>";
-
-
-
-
+$response = $sg->client->mail()->send()->post($request_body);
+echo $response->statusCode();
+echo $response->body();
+echo $response->headers();
 
 ?>
 
