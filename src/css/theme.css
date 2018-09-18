@@ -890,7 +890,6 @@ section {
 .sed-ut-perspiciatis {
     color: #000000;
     max-width: 950px;
-    height: 20px;
     font-family: "Proxima Nova";
     font-size: 24px;
     font-weight: 300;
@@ -898,41 +897,9 @@ section {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 10%;
-    padding-top: 4%;
     margin: auto;
 }
 
-@media (max-width: 650px) {
-    .sed-ut-perspiciatis{
-    padding-bottom: 200px;
-    }
-}
-
-
-@media (max-width: 400px) {
-    .sed-ut-perspiciatis{
-    padding-bottom: 400px;
-    }
-}
-
-@media (max-width: 300px) {
-    .sed-ut-perspiciatis{
-    padding-bottom: 500px;
-    }
-}
-
-@media (max-width: 270px) {
-    .sed-ut-perspiciatis{
-    padding-bottom: 600px;
-    }
-}
-
-@media (max-width: 240px) {
-    .sed-ut-perspiciatis{
-    padding-bottom: 700px;
-    }
-}
 
 #conteneurFlexFac{
     display: flex;
@@ -995,7 +962,6 @@ section {
 }
 
 .days-of-quality {
-    height: 72px;
     width: 80%;
     color: #000000;
     font-family: "Proxima Nova";
@@ -1005,36 +971,7 @@ section {
     text-align: center;
     margin: auto;
     margin-top: 3%;
-}
-
-@media (max-width: 591px) {
-    .days-of-quality {
-        margin-bottom: 10%;
-    }
-}
-
-@media (max-width: 451px) {
-    .days-of-quality {
-        margin-bottom: 20%;
-    }
-}
-
-@media (max-width: 351px) {
-    .days-of-quality {
-        margin-bottom: 30%;
-    }
-}
-
-@media (max-width: 321px) {
-    .days-of-quality {
-        margin-bottom: 60%;
-    }
-}
-
-@media (max-width: 271px) {
-    .days-of-quality {
-        margin-bottom: 80%;
-    }
+    margin-bottom: 3%; 
 }
 
 
@@ -1046,7 +983,6 @@ section {
     line-height: 40px;
     text-align: center;
     max-width: 100%;
-    padding-top: 59px;
     padding-bottom: 59px
 }
 
