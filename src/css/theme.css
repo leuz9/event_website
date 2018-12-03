@@ -1012,7 +1012,7 @@ section {
 .d21 {
     height: 327px;
     width: 100%;
-    background-image: url("../../images/djiba.jpeg") ;
+    background-image: url("../../images/djiba.png") ;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1045,7 +1045,7 @@ section {
     top: 0px;
     left: 60px;
     display: none;
-    width: 320px;
+    width: 65%;
     height: 327px;
     background: #FAFAFA;
     padding: 30px;
