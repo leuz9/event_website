@@ -1002,7 +1002,8 @@ section {
 .d20 {
     height: 327px;
     width: 100%;
-    background-image: url("../../images/Rectangle2.png") ;
+    background-image: url("../../images/Rectangle2.jpeg") ;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     line-height: normal;
@@ -1011,7 +1012,7 @@ section {
 .d21 {
     height: 327px;
     width: 100%;
-    background-image: url("../../images/ayo.jpg") ;
+    background-image: url("../../images/djiba.jpeg") ;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1563,10 +1564,10 @@ input[type=message] {
     width: 24px;
     position: relative;
     z-index: 2;
-    background-image: url("../images/icon/twitter.png") ;
+    background-image: url("../../images/icon/twitter.png") ;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain
+    background-size: contain;
 }
 
 #social3 {
@@ -1577,7 +1578,7 @@ input[type=message] {
     width: 24px;
     position: relative;
     z-index: 2;
-    background-image: url("../images/icon/linkidin.png") ;
+    background-image: url("../../images/icon/linkidin.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain
@@ -1605,7 +1606,7 @@ input[type=message] {
     width: 24px;
     position: relative;
     z-index: 2;
-    background-image: url("../images/icon/facebook.png") ;
+    background-image: url("../../images/icon/facebook.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain
