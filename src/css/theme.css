@@ -1126,13 +1126,7 @@ input:checked + label{
 
 
 .slideimg {
-    height: 81px;
-    width: 149px !important;
-    position: relative;
-    margin-left: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100px;
 }
 
 .contact-us {
