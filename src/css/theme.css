@@ -2899,21 +2899,6 @@ input:checked + section.box .box-title:before {
     vertical-align: middle;
 }
 
-.input-group-addon {
-    height: 52px;	
-    width: 800px;
-    padding: .5rem .75rem;
-    margin: auto !important;
-    background: rgba(97, 191, 173, .25)
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.25;
-    color: #495057;
-    text-align: center;
-    -webkit-border-radius: .25rem;
-    -moz-border-radius: .25rem;
-    border-radius: .25rem;
-}
 
 /* ----- Header ----- */
 .header-desktop {
