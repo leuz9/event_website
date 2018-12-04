@@ -1074,7 +1074,7 @@ section {
 .apercu {
     position: absolute;
     top: 0px;
-    left: 60px;
+    left: 20%;
     display: none;
     width: 65%;
     height: 327px;
@@ -1084,20 +1084,34 @@ section {
 }
 @media (max-width: 991px) {
     .apercu {
-        left: 92px;
+        width: 80%;
+        left: 10%;
     }
 }
-@media (max-width: 491px) {
+@media (max-width: 410px) {
     .apercu {
-        left: 30px;
+        width: 70%;
+        left: 17%;
     }
 }
-@media (max-width: 343px) {
+@media (max-width: 375px) {
     .apercu {
-        left: 5px;
+        width: 75%;
+        left: 12%;
     }
 }
-
+@media (max-width: 335px) {
+    .apercu {
+        width: 85%;
+        left: 9%;
+    }
+}
+@media (max-width: 307px) {
+    .apercu {
+        width: 95%;
+        left: 6%;
+    }
+}
 
 label {
     transition: 0.25s ease;
@@ -1765,6 +1779,11 @@ input[type=message] {
     font-size: 40px;
     font-weight: 600;
 }
+@media (max-width: 621px) {
+    .day-b {
+        font-size: 24px;
+    }
+}
 .date1 {
     color: #000000;
     font-family: "Proxima Nova";
@@ -1783,13 +1802,13 @@ input[type=message] {
 .flex-container2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
     flex-direction: row;
     border: 2px solid #ffffff;
 }
 
 .flex-container2 > div {
-    margin: 2%;
+    margin: 4%;
     font-size: 20px;
 }
 @media (max-width: 621px) {
