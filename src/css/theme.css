@@ -707,10 +707,37 @@ section {
     color: rgb(0, 0, 0) !important;
     font-family: "Proxima Nova";
     font-size: 21px; 
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: 1;
+    margin-left: -14% 
     
+}
+
+@media (max-width: 1000px) {
+    .date {
+        margin-left: -2% 
+
+    }
+}
+
+.datem {
+    color: rgb(0, 0, 0) !important;
+    font-family: "Proxima Nova";
+    font-size: 21px;
+    text-align: left;
+    line-height: 25px;
+    position: relative;
+    z-index: 1;
+    margin-left: -20% 
+    
+}
+
+@media (max-width: 1000px) {
+    .datem {
+        margin-left: -8% 
+
+    }
 }
 /* Popup container - can be anything you want */
 .popup {
@@ -767,25 +794,21 @@ section {
     to {opacity:1 ;}
 }
 
-.datem {
-    color: rgb(0, 0, 0) !important;
-    font-family: "Proxima Nova";
-    font-size: 21px;
-    width: 600px;  
+.flex-container0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: row;
+    margin: auto;
+    height: 100%;
+}
+
+.flex-container0 > div {
+    margin: auto;
     text-align: left;
-    line-height: 25px;
-    position: relative;
-    z-index: 1;
-    margin:auto;
-    
+    font-size: 30px;
 }
 
-@media (max-width: 321px) {
-    .datem {
-        width: 200px;
-
-    }
-}
 
 .separation{ 
 	border: 1px solid #9B9B9B;
@@ -793,6 +816,14 @@ section {
 	height: 87px;
 	width: 2px;
 	box-sizing: border-box;      
+}
+
+.separation1{ 
+	border: 1px solid #ffffff;
+    border-left:    0px solid hsla(200, 10%, 50%,100);
+	height: 87px;
+	width: 2px;
+    box-sizing: border-box;  
 }
 
 .separationm{ 
@@ -1759,8 +1790,7 @@ input[type=message] {
 
 .flex-container2 > div {
     margin: 2%;
-    text-align: left;
-    font-size: 30px;
+    font-size: 20px;
 }
 @media (max-width: 621px) {
     .flex-container2 > div{
