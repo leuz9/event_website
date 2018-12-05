@@ -328,7 +328,7 @@ section {
 }
 
 #img-0433-edit {
-    background-image: url("../../images/Event1.jpeg") ;
+    background-image: url("../../images/event.jpeg") ;
     background-size: cover;
     height: 600px;
     margin: auto;
@@ -339,6 +339,23 @@ section {
     z-index: 2;
     padding-top: 0;
 }
+
+@media (max-width: 950px) {
+    #img-0433-edit {
+        height: 400px
+    }
+}
+@media (max-width: 640px) {
+    #img-0433-edit {
+        height: 300px
+    }
+}
+@media (max-width: 480px) {
+    #img-0433-edit {
+        height: 400px
+    }
+}
+
 
 .bootcamp {
 	height: 65px;
