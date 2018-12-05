@@ -339,7 +339,28 @@ section {
     z-index: 2;
     padding-top: 0;
 }
-
+/* ----- freestyle----- 
+@media (max-width: 1050px) {
+    #img-0433-edit {
+        height: 500px
+    }
+}
+@media (max-width: 950px) {
+    #img-0433-edit {
+        height: 400px
+    }
+}
+@media (max-width: 640px) {
+    #img-0433-edit {
+        height: 300px
+    }
+}
+@media (max-width: 480px) {
+    #img-0433-edit {
+        height: 600px
+    }
+}
+*/
 
 .bootcamp {
 	height: 65px;
