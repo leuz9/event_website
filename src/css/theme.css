@@ -1814,6 +1814,7 @@ input[type=message] {
 .accordion input {
 	display: none;
 }
+
 .day-1 {
     cursor: pointer;
     width: 100%;
